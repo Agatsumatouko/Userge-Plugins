@@ -34,7 +34,7 @@ async def bots(message: Message):
         _msg = _msg.replace(checking, nice)
         await message.edit(_msg, parse_mode="html")
         await userge.read_history(bot)
-    tz = pytz.timezone('Asia/Kolkata')
+    tz = pytz.timezone('Asia/Jakarta')
     time_now = datetime.utcnow().astimezone(tz=tz).strftime("%I:%M %p - %d %B %Y")
     _msg += f"<code>[Updated on : {time_now}]</code>"
     await message.edit(_msg, parse_mode="html")
